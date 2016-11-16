@@ -1,0 +1,30 @@
+table td {
+    border: 1px solid #eee;
+}
+.level1 td:first-child {
+    padding-left: 20px;
+}
+.level2 td:first-child {
+    padding-left: 40px;
+}
+.level3 td:first-child {
+    padding-left: 60px;
+}
+.level4 td:first-child {
+    padding-left: 80px;
+}
+.level5 td:first-child {
+    padding-left: 100px;
+}
+
+.collapse .toggle {
+    background: url("http://mleibman.github.com/SlickGrid/images/collapse.gif");
+}
+.expand .toggle {
+    background: url("http://mleibman.github.com/SlickGrid/images/expand.gif");
+}
+.toggle {
+    height: 9px;
+    width: 9px;
+    display: inline-block;
+}

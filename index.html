@@ -1,0 +1,75 @@
+<html>
+<head>
+<title> C12 Monitor Try </title>
+<script src="/static/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="/static/collapsableTable.js" type="text/javascript"></script>
+<script src="/static/moreJscripts.js" type="text/javascript"></script>
+<link href="/static/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<!-- _____ this div is for the left column of the page which contains the zone table and the collapsable table _____ -->
+	<div id="leftColumnDiv" style='float:left'>
+		<table border="1" id="zoneTable">
+			<tr>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('1')" bgColor='#FF0000'>zone1</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('2')">zone2</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('3')">zone3</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('4')">zone4</td>
+			</tr>
+			<tr>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('5')">zone5</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('6')">zone6</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('7')">zone7</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('8')">zone8</td>
+			</tr>
+			<tr>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('9')">zone9</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('10')">zone10</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('11')">zone11</td>
+				<td onClick="this.bgColor='#FF0000'; unHighlightOthers('12')">zone12</td>
+			</tr>
+		</table>
+		<br>
+
+		<select size="5" style="width:185px; overflow:auto;" id="fileList" multiple></select>
+		<br>
+
+		<script>
+		buildFileList();
+		</script>
+
+		<button onclick="selectFile(); buildDirTable()">Select File</button>
+		<br>
+
+		<p id="selectedFile"></p>
+
+		<table id="directoryTable">
+		</table>
+
+	</div>
+
+	<!-- _____ this div is for the 12 "zones" (or "pads") _____ -->
+	<div style='float:left'>
+		<img id="zone1pic" src="" alt="zone1" width="150px" height="100px">
+		<img id="zone2pic" src="clas12_gemc.png" alt="zone2" width="150px" height="100px">
+		<img id="zone3pic" src="clas12_gemc.png" alt="zone3" width="150px" height="100px">
+		<img id="zone4pic" src="clas12_gemc.png" alt="zone4" width="150px" height="100px">
+		<br>
+		<img id="zone5pic" src="clas12_gemc.png" alt="zone5" width="150px" height="100px">
+		<img id="zone6pic" src="clas12_gemc.png" alt="zone6" width="150px" height="100px">
+		<img id="zone7pic" src="clas12_gemc.png" alt="zone7" width="150px" height="100px">
+		<img id="zone8pic" src="clas12_gemc.png" alt="zone8" width="150px" height="100px">
+		<br>
+		<img id="zone9pic" src="clas12_gemc.png" alt="zone9" width="150px" height="100px">
+		<img id="zone10pic" src="clas12_gemc.png" alt="zone10" width="150px" height="100px">
+		<img id="zone11pic" src="clas12_gemc.png" alt="zone11" width="150px" height="100px">
+		<img id="zone12pic" src="clas12_gemc.png" alt="zone12" width="150px" height="100px">
+	</div>
+
+	<script>
+	refreshPicSizes();
+	</script>
+
+</body>
+</html>
